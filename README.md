@@ -1,0 +1,3 @@
+# Introduction
+
+The project compares Hidden Markov Models, Conditional Random Fields, and Long Short-Term Memory models in the downstream NLP task of Part-of-Speech modelling. It makes uses of the CRF++ Toolkit for CRF and natively-develoepd code for HMM and LSTM. The research question, hypothesis, results, and analysis can be found in the report. This is an adapted version of the course project submission for "Computational Linguistics 1" (Spring 2024 semester). 
