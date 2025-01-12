@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>2289</sentences><tokens>23349</tokens><words>23901</words><fused>552</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>2289</sentences><tokens>23349</tokens><words>23901</words><fused>552</fused></test>
+  </size>
+  <lemmas unique="3639" /><!-- le, ?, de, être, quel, il, avoir, à, que, un, ", qui, en, où, dans -->
+  <forms unique="4218" /><!-- ?, de, le, est, la, quelle, l', quel, à, a, les, ", qui, d', en -->
+  <fusions unique="4" /><!-- du, des, au, aux -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="16">
+    <tag name="ADJ">1511</tag><!-- quel, premier, américain, grand, mondial, principal, célèbre, haut, humain, national -->
+    <tag name="ADP">2869</tag><!-- de, à, en, dans, pour, sur, par, _, sous, comme -->
+    <tag name="ADV">843</tag><!-- où, quand, plus, combien, comment, ne, pas, pourquoi, surtout, _ -->
+    <tag name="AUX">1700</tag><!-- être, avoir, faire -->
+    <tag name="CCONJ">98</tag><!-- et, ou, _, et_/_ou, mais, puis -->
+    <tag name="DET">3836</tag><!-- le, quel, un, son, _, ce, chaque, il, quelqu'un, 17 451 -->
+    <tag name="INTJ">3</tag><!-- crac, cric, croc -->
+    <tag name="NOUN">4051</tag><!-- nom, année, ville, président, état, lieu, logement, film, _, pays -->
+    <tag name="NUM">115</tag><!-- deux, 1994, 1993, 1989, 1990, 1991, 1992, 1988, 10, 1929 -->
+    <tag name="PRON">1658</tag><!-- il, qui, que, le/lui, ce, quoi, y, lequel, le, _ -->
+    <tag name="PROPN">2086</tag><!-- États-Unis, New, Terre, Californie, Alaska, John, York, soleil, Charles, Kentucky -->
+    <tag name="PUNCT">2816</tag><!-- ?, ", ,, ., (, ), :, -, ! -->
+    <tag name="SCONJ">180</tag><!-- que, _, si, lorsque -->
+    <tag name="SYM">1</tag><!-- _ -->
+    <tag name="VERB">1890</tag><!-- avoir, trouver, être, nommer, faire, pouvoir, devoir, naître, inventer, connaître -->
+    <tag name="X">244</tag><!-- the, of, 's, and, caliente, is, west, hazmat, in, to -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="33">
+    <feat name="Definite" value="Def" upos="DET">2759</feat><!-- le, la, l', les -->
+    <feat name="Definite" value="Ind" upos="DET">375</feat><!-- un, une, des, de, d', quelqu', tout -->
+    <feat name="Foreign" value="Yes" upos="NUM,X">244</feat><!-- the, of, 's, and, caliente, is, west, hazmat, in, to -->
+    <feat name="Gender" value="Fem" upos="ADJ,ADP,DET,NOUN,PRON,PROPN,VERB">3795</feat><!-- la, quelle, une, année, ville, -t-elle, -elle, première, compagnie, population -->
+    <feat name="Gender" value="Masc" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">6033</feat><!-- le, quel, un, nom, -t-il, -il, premier, président, état, lieu -->
+    <feat name="Mood" value="Cnd" upos="VERB">18</feat><!-- devrait, pourrait, prendrait, procurerait, recevrait, voudrais -->
+    <feat name="Mood" value="Imp" upos="VERB">37</feat><!-- Nommez, Dites, Définissez, Laissez, Rions -->
+    <feat name="Mood" value="Ind" upos="AUX,PRON,VERB">2378</feat><!-- est, a, était, fut, sont, trouve, signifie, ai, puis, eut -->
+    <feat name="Mood" value="Sub" upos="AUX">8</feat><!-- soit, ait, soient, aient -->
+    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">1543</feat><!-- les, sont, des, Nommez, -ils, quelles, quels, mes, ont, vous -->
+    <feat name="Number" value="Sing" upos="ADJ,ADP,AUX,DET,NOUN,PRON,PROPN,VERB">12296</feat><!-- le, est, la, quelle, quel, l', a, un, nom, -t-il -->
+    <feat name="NumType" value="Card" upos="NOUN,NUM,PRON">128</feat><!-- deux, 1994, 1993, 1989, 1990, 1991, 1992, milles, 1988, cent -->
+    <feat name="NumType" value="Ord" upos="ADJ">132</feat><!-- premier, première, dernière, deuxième, troisième, 19e, dixième, huitième, premiers, quatrième -->
+    <feat name="Person" value="1" upos="AUX,PRON,VERB">235</feat><!-- -je, je, ai, puis, j', suis, vais, me, m', -moi -->
+    <feat name="Person" value="2" upos="AUX,PRON,VERB">106</feat><!-- Nommez, dois, vous, -vous, avez, devez, êtes, viens, Définissez, Laissez -->
+    <feat name="Person" value="3" upos="AUX,DET,PRON,VERB">2905</feat><!-- est, a, -t-il, se, -il, était, fut, sont, trouve, -t-elle -->
+    <feat name="Polarity" value="Neg" upos="ADV">51</feat><!-- pas, n', ne, plus, que -->
+    <feat name="Poss" value="Yes" upos="DET,NOUN">144</feat><!-- mon, mes, son, sa, ma, votre, ses, vos, leur, leurs -->
+    <feat name="PronType" value="Art" upos="DET">3134</feat><!-- le, la, l', les, un, une, des, de, d', quelqu' -->
+    <feat name="PronType" value="Dem" upos="DET,PRON">16</feat><!-- cela, ce, ces, celle, celle-ci, celui, celui-ci, cet, cette, ceux -->
+    <feat name="PronType" value="Int" upos="ADV,DET,PRON">1678</feat><!-- quelle, qui, quel, où, quand, Qu', combien, comment, que, quoi -->
+    <feat name="PronType" value="Prs" upos="PRON">2</feat><!-- eux, moi -->
+    <feat name="PronType" value="Rel" upos="PRON">95</feat><!-- qui, que, laquelle, lequel, dont, qu', où, lesquelles -->
+    <feat name="Reflex" value="Yes" upos="PRON">151</feat><!-- se, s', me, m', vous -->
+    <feat name="Tense" value="Fut" upos="AUX,VERB">5</feat><!-- sera, connaîtra, disposera, produira -->
+    <feat name="Tense" value="Imp" upos="AUX,VERB">161</feat><!-- était, avait, jouait, étaient, vivaient, coûtait, nommait, portait, produisait, aidait -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">978</feat><!-- fut, été, inventé, né, situé, eut, écrit, mort, connu, joué -->
+    <feat name="Tense" value="Pres" upos="AUX,VERB">2159</feat><!-- est, a, sont, trouve, signifie, ai, Nommez, puis, ont, fait -->
+    <feat name="Typo" value="Yes" upos="NOUN">1</feat><!-- Porto -->
+    <feat name="VerbForm" value="Fin" upos="AUX,VERB">2440</feat><!-- est, a, était, fut, sont, trouve, signifie, ai, Nommez, puis -->
+    <feat name="VerbForm" value="Inf" upos="AUX,VERB">282</feat><!-- avoir, faire, obtenir, bénéficier, donner, être, payer, déclarer, trouver, déduire -->
+    <feat name="VerbForm" value="Part" upos="AUX,VERB">868</feat><!-- été, inventé, né, situé, écrit, mort, connu, joué, eu, fait -->
+    <feat name="Voice" value="Pass" upos="VERB">247</feat><!-- situé, connu, inventé, connue, construit, enterré, fait, située, construite, élu -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="40">
+    <dep name="acl">145</dep>
+    <dep name="acl:relcl">77</dep>
+    <dep name="advcl">109</dep>
+    <dep name="advcl:cleft">17</dep>
+    <dep name="advmod">530</dep>
+    <dep name="amod">944</dep>
+    <dep name="appos">55</dep>
+    <dep name="aux:caus">3</dep>
+    <dep name="aux:pass">247</dep>
+    <dep name="aux:tense">503</dep>
+    <dep name="case">2684</dep>
+    <dep name="cc">98</dep>
+    <dep name="ccomp">14</dep>
+    <dep name="conj">108</dep>
+    <dep name="cop">947</dep>
+    <dep name="dep">79</dep>
+    <dep name="det">3808</dep>
+    <dep name="dislocated">139</dep>
+    <dep name="expl:comp">176</dep>
+    <dep name="expl:subj">333</dep>
+    <dep name="fixed">163</dep>
+    <dep name="flat:foreign">131</dep>
+    <dep name="flat:name">581</dep>
+    <dep name="goeswith">1</dep>
+    <dep name="iobj">9</dep>
+    <dep name="mark">297</dep>
+    <dep name="nmod">1848</dep>
+    <dep name="nsubj">2161</dep>
+    <dep name="nsubj:caus">1</dep>
+    <dep name="nsubj:pass">240</dep>
+    <dep name="nummod">49</dep>
+    <dep name="obj">867</dep>
+    <dep name="obl:agent">30</dep>
+    <dep name="obl:arg">552</dep>
+    <dep name="obl:mod">606</dep>
+    <dep name="orphan">1</dep>
+    <dep name="parataxis">1</dep>
+    <dep name="punct">2816</dep>
+    <dep name="root">2289</dep>
+    <dep name="xcomp">242</dep>
+  </deps>
+</treebank>
